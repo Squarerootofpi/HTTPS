@@ -43,4 +43,6 @@ sudo node server.js
 ```
 And make sure that port 80 and port 443 are open on your ec2 node.
 
-What response do you get when you access the page https://yourIP/ through your browser? *If you're using Chrome you might get a warning about an unknown certificate... you can likely ignore it in this case.
+What response do you get when you access the page https://yourIP/ through your browser? 
+
+If you're using Chrome you might get a warning about an unknown certificate... you can likely ignore it in this case.
