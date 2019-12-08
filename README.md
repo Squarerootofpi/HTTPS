@@ -1,7 +1,7 @@
 # HTTPS
 This tutorial will show you how to get https running on your node.js project.
 
-Create a "server.js" file with the following content
+Create a "https-server.js" file with the following content
 ```
 var express = require('express');
 var https = require('https');
