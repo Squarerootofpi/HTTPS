@@ -19,6 +19,11 @@ app.get('/', function(req, res){
   res.send('Hello from Express');
 });
 ```
+Then set up your node modules
+```
+npm init
+npm install express
+```
 You will need to create ssl server keys and put them into a ssl directory in order to make this work.
 You can generate the keys with the following commands 
 ```
@@ -36,10 +41,10 @@ mv server.pem server.key
 Your ssl directory should now contain the following files
 server.crt server.csr server.key
 
-Now run the server in "server.js".  You need to stop the httpd web server that is currently running on port 80.  You will need to use sudo to start your server since it will be running on port 80 and 443.
+Now run the server in "server.js".  You need to stop the httpd web server that is currently running on port 80.  You will need to use sudo to start your server since it will be running on port 80 and 443.  Since the sudo user does not have access to your path, you will need to give the full path to node.
 ```
 sodo service httpd stop
-sudo node server.js
+sudo /home/ec2-user/.nvm/versions/node/v10.16.3/bin/node https-server.js
 ```
 And make sure that port 80 and port 443 are open on your ec2 node.
 
