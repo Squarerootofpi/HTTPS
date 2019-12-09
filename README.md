@@ -43,7 +43,7 @@ server.crt server.csr server.key
 
 Now run the server in "server.js".  You need to stop the httpd web server that is currently running on port 80.  You will need to use sudo to start your server since it will be running on port 80 and 443.  Since the sudo user does not have access to your path, you will need to give the full path to node.
 ```
-sodo service httpd stop
+sudo service httpd stop
 sudo /home/ec2-user/.nvm/versions/node/v10.16.3/bin/node https-server.js
 ```
 And make sure that port 80 and port 443 are open on your ec2 node.
